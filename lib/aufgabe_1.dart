@@ -38,21 +38,47 @@ class MyWidget extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('A'),
-            Text('B'),
+            Text(
+              'Sven',
+              style: TextStyle(
+                fontSize: 40,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+                shadows: [
+                  Shadow(
+                    color: Colors.blue,
+                    offset: Offset(4, 7),
+                    blurRadius: 8,
+                  )
+                ],
+              ),
+            ),
           ],
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('C'),
-            Text('D'),
+            Text('B',
+                style: TextStyle(
+                  color: Colors.red,
+                  fontSize: 40,
+                )),
+            Text('C',
+                style: TextStyle(
+                  color: Colors.blue,
+                  fontSize: 40,
+                )),
+            Text('D',
+                style: TextStyle(
+                  color: Colors.purple,
+                  fontSize: 40,
+                )),
           ],
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('E'),
+            Text('Vitamin E'),
           ],
         ),
       ],
